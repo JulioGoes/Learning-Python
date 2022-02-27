@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <h1>Tela de Login</h1>
+    <form action="submit" method="post">{% csrf_token %}
+        <div>
+            <label>User: </label>
+            <input type="text" name="username">
+            <br>
+            <label>Password: </label>
+            <input type="password" name="password">
+            <button type="submit">Entrar</button>
+        </div>
+    </form>
+
+    {% for message in messages%}
+    <div align="center">
+        <strong>Error</strong> {{ message }}
+    </div>
+    {% endfor%}
+</body>
+</html>
