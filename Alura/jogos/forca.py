@@ -36,7 +36,7 @@ def jogar():
 
 
 def carrega_palavra_secreta():
-    doc = open('src/doc.txt', 'r')
+    doc = open('Alura/arquivos/doc.txt', 'r')
     palavra = [linha.strip().upper() for linha in doc]
     doc.close()
 
