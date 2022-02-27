@@ -1,0 +1,6 @@
+Python
+SQL
+HTML
+CSS
+JavaScript
+Java
